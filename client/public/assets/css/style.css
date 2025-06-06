@@ -1,0 +1,41 @@
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    /* Ẩn mặc định */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    background-color: #8879de;
+    /* Đổi sang trắng để nổi bật */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    min-width: 160px;
+}
+
+/* Dropdown items */
+.dropdown-menu li a {
+    color: #7a6ad8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover to show dropdown */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hover effect */
+.dropdown-menu li a:hover {
+    background-color: #7a6ad8;
+    color: #ffffff;
+}
